@@ -20,9 +20,7 @@ componentDidMount() {
            this.setState({
              isLoading: false,
              dataSource: responseJson
-           }, function() {
-             // In this block you can do something with new state.
-           });
+           }
          })
          .catch((error) => {
            console.error(error);

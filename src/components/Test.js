@@ -6,6 +6,8 @@ import FoodList from './FoodList';
 import Taxi from './Taxi';
 //import Login from './Login';
 import RegisterAsChef from './RegisterAsChef';
+import FoodItems from './FoodItems';
+
 
 export class Test extends Component {
   static navigationOptions = {
@@ -33,7 +35,7 @@ export class Test extends Component {
   };  
   render () {
         return (
-          <View>
+          <View style={{flex: 1}}>
             <View style={styles.container1}>
               <TouchableOpacity style = {styles.button} onPress={() => this.props.navigation.navigate(`FoodList`)}>
                
@@ -104,7 +106,8 @@ const AppStackNavigator = createStackNavigator({
   RegisterAsChef: {screen: RegisterAsChef},
   //Login: {screen: Login},
   FoodList : { screen: FoodList },
-  Taxi: { screen: Taxi}
+  Taxi: { screen: Taxi},
+  FoodItems : { screen: FoodItems },
 });
 const App = createAppContainer(AppStackNavigator);
 export default App;
@@ -178,29 +181,33 @@ const styles = StyleSheet.create({
     padding: 5
   },
   container1: {
+    aspectRatio: 1,
     alignItems: 'flex-start',
     position: 'absolute',
-    top: 30,
-    left: 12
+    top: '4%',
+    left: '3%'
   },
   container2: {
+    aspectRatio: 1,
     alignItems: 'flex-start',
     position: 'absolute',
-    top: 30,
-    right: 12
+    top: '4%',
+    right: '3%'
   },
   container3: {
+    aspectRatio: 1,
     alignItems: 'flex-start',
-    position: 'relative',
-    top: 189,
-    left: 12
+    position: 'absolute',
+    top: '26%',
+    left: '3%'
   },
   container4: {
+    aspectRatio: 1,
     width: '100%',
     alignItems: 'flex-start',
     position: 'relative',
-    top: 250,
-    left: 0
+    top: '46%',
+    left: '0%'
   },
 
 });

@@ -36,7 +36,7 @@ export default class FoodList extends Component {
     componentDidMount() {
         axios.get('https://api.misiki.in/api/dishes').then(res => {
             console.log(res);
-            this.setState({ realItems: res.data });
+            this.props.setState({ realItems: res.data });
         });
     }
 
@@ -76,7 +76,7 @@ export default class FoodList extends Component {
               
            
      
-        this.state= {
+        this.props.state= {
            
             realItems: [],
             list: new DataProvider((r1,r2) => r1 != r2).cloneWithRows(realItems),

@@ -2,6 +2,7 @@ import React , { Component } from 'react' ;
 import {YellowBox, Button, Platform,  StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Icon from 'react-native-vector-icons/FontAwesome';
+//import FoodList1 from './FoodList1';
 import FoodList from './FoodList';
 import Taxi from './Taxi';
 //import Login from './Login';
@@ -106,8 +107,10 @@ const AppStackNavigator = createStackNavigator({
   RegisterAsChef: {screen: RegisterAsChef},
   //Login: {screen: Login},
   FoodList : { screen: FoodList },
+  //FoodList1 : { screen: FoodList1 },
   Taxi: { screen: Taxi},
   FoodItems : { screen: FoodItems },
+
 });
 const App = createAppContainer(AppStackNavigator);
 export default App;

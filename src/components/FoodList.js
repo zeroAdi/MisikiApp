@@ -20,9 +20,13 @@ componentDidMount() {
            this.setState({
              isLoading: false,
              dataSource: responseJson
+<<<<<<< HEAD
            }, function() {
             this.arrayholder = responseJson;
            });
+=======
+           }
+>>>>>>> 5b8df9e64db049238bcb0b5c9fb1176a610c1e58
          })
          .catch((error) => {
            console.error(error);
